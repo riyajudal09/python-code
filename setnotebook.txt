@@ -1,0 +1,49 @@
+
+1)
+word=["Hello","world","python","good","happy"]
+Uppercase=[]
+for upper in word:
+    a=upper.upper()  
+    print(a)
+
+2)
+
+import random
+num=set()
+while(len(num)<10):
+    num.add(random.randint(12,42))
+print(num)
+count=[]
+for n in num :
+    if n<35:
+        count.append(n)
+print(count)
+sum=0
+for n in count:
+    sum+=n
+print(sum)
+
+3)
+
+Names=set()
+nam=["heelo","world","python","good"]
+Names.update(nam)
+print(Names)
+if "python" in Names:
+    Names.remove("python")
+    Names.add("niyu")
+print(Names)
+
+4)
+
+names={"alice","bob","andrew","brian","bella","aaron"}
+name_A=[]
+for name in names:
+    if name.startswith('a'):
+        name_A.append(name)
+print(name_A)
+name_B=[]
+for name in names:
+    if name.startswith('b'):
+        name_B.append(name)
+print(name_B)

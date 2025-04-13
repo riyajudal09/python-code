@@ -1,0 +1,162 @@
+1)
+a=int(input("Enter first value:"))
+b=int(input("Enter second value:"))
+if(a>b):
+    print("Largest value is:",a)
+    print("Smallest value is:",b)
+else:
+    print("Largest value is:",b)
+    print("Smallest value is:",a)
+
+2)
+a=int(input("Enter first value:"))
+b=int(input("Enter second value:"))
+c=int(input("Enter third value:"))
+if(a>b & a>c):
+    if(b>c):
+        print("Largest value is:",a)
+        print("Smallest value is:",c)
+    elif(c>b):
+        print("Largest value is:",a)
+        print("Smallest value is:",b)
+elif(b>c & b>a):
+     if(c>a):
+        print("Largest value is:",b)
+        print("Smallest value is:",a)
+     elif(a>c):
+        print("Largest value is:",b)
+        print("Smallest value is:",c)
+else:
+     if(a>b):
+        print("Largest value is:",c)
+        print("Smallest value is:",b)
+     elif(b>a):
+        print("Largest value is:",c)
+        print("Smallest value is:",a)
+
+3)
+num=int(input("Enter a number"))
+if(num%2==0):
+    print("number is even")
+else:
+    print("num is odd")
+
+4)
+num=int(input("Enter a number"))
+if(num%10==0):
+    print("number is divisible by 10")
+else:
+    print("num is not divisible by 10")
+
+5)
+age=int(input("Enter your age:"))
+if(age<18):
+    print("minor")
+else:
+    print("major")
+
+6)
+num=input("Enter number:")
+print(len(num))
+
+7)
+year=int(input("Enter a year:"))
+if(year%4==0):
+    print(" Leap year")
+else:
+    print(" Not leap year")
+8)
+angle1=int(input("Enter first angle:"))
+angle2=int(input("Enter second angle:"))
+angle3=int(input("Enter third angle:"))
+if(angle1+angle2+angle3 == 180):
+    print("valid angle")
+else:
+    print("Invalid angles")
+
+9)
+num=int(input("Enter a number"))
+if(num>=0):
+    print("absolute value is:", num)
+else:
+    print("Absolute value is:", 0-num)
+
+10)
+length=int(input("Enter length of rectangle:"))
+breadth=int(input("Enter breadth of rectangle:"))
+area=length*breadth
+perimeter=2*(length+breadth)
+if(area>perimeter):
+    print("Area is greater then perimeter")
+else:
+    print("Area is smaller then perimeter")
+
+11)
+x1=int(input("input x1:"))
+y1=int(input("input y1:"))
+x2=int(input("input x2:"))
+y2=int(input("input y2:"))
+x3=int(input("input x3:"))
+y3=int(input("input y3:"))
+area=x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y2)
+if(area==0):
+    print("those three points are on stright line")
+else:
+    print("those three points are on stright line")
+
+12)
+centerx1=int(input("input center x1:"))
+centery1=int(input("input center y1:"))
+r=int(input("Enter radious:"))
+x2=int(input("input x2:"))
+y2=int(input("input y2:"))
+a=pow(x2,2)-pow(centerx1,2)
+b=pow(y2,2)-pow(centery1,2)
+if(a+b==pow(r,2)):
+    print("This points lies on circle")
+elif(a+b>pow(r,2)):
+    print("This points lies outside the 0circle")
+else:
+    print("This points lies inside the circle")
+
+13)
+lst=["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"]
+num=int(input("Enter a number between 0 to 19:"))
+if(0<num<=19):
+    print(num,"->",lst[num])
+else:
+    print("Not a valid number.")
+
+14)
+print("Enter all three subject marks:")
+lst=[]
+lst.append(int(input()))
+lst.append(int(input()))
+lst.append(int(input()))
+print(lst)
+total=sum(lst)
+average=total/3
+i=1
+print("Total marks are:",total)
+print("Average marks are:",average)
+for ele in lst:
+    if(0<=ele<=39):
+        print(" F grade in subject",i)
+    elif(40<=ele<=44):
+        print(" P grade in subject",i)
+    elif(45<=ele<=49):
+        print(" C grade in subject",i)
+    elif(50<=ele<=54):
+        print(" B grade in subject",i)
+    elif(55<=ele<=59):
+        print(" B+ grade in subject",i)
+    elif(60<=ele<=69):
+        print(" A grade in subject",i)
+    elif(70<=ele<=79):
+        print(" A+ grade in subject",i)
+    elif(80<=ele<=100):
+        print("O grade in subject",i)
+
+    else:
+        print("Invalid marks:")
+    i+=1

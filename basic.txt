@@ -1,0 +1,130 @@
+1)
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+print("Sum of both numbers is",a+b)
+
+2)
+
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+print("difference of both numbers is",a-b)
+
+3)
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+print("product of both numbers is",a*b)
+
+4)
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+print("division of both numbers is",a/b)
+
+5)
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+print("Sum of both numbers is",a+b)
+print("difference of both numbers is",a-b)
+print("product of both numbers is",a*b)
+print("division of both numbers is",a/b)
+
+6)
+a=int(input("Enter hours"))
+print("Munites of this hour is:", a*60)
+
+7)
+a=int(input("Enter minutes"))
+print("Hours of this minutes is:", a/60)
+
+8)
+a=int(input("Enter minutes"))
+print("Hours of this minutes is:", a/60)
+
+9)
+a=int(input("Enter rupees"))
+print("dollars of this rupees are:", a/48)
+
+10)
+a=int(input("Enter the dollars:"))
+print("pound of those dollars are:",(a*48)/70)
+
+11)
+a=int(input("Enter grams:"))
+print("kilograms of the grams are:",a/1000)
+
+12)
+a=int(input("Enter kilograms:"))
+print("Grams of the kilograms are:",a*1000)
+
+13)
+a=int(input("Enter the bytes:"))
+print("kilobytes of this bytes are:", a/1000)
+print("Megabytes of this bytes are:", a/1000000)
+print("Gigabytes of yhis bytes are:",a/1000000000)
+
+14)
+a=int(input("Enter temprature in celcious"))
+print("fahrenheit of the temprature is:", ((a*9)/5)+32)
+
+15)
+a=int(input("Enter temprature in fahrenheit: "))
+print("celcious of the temprature is:", 5/9*(a-32))
+
+16)
+p=int(input("Enter the principle amount: "))
+r=int(input("Enter rate of intrest:"))
+t=float(input("Enter the value of time in years:"))
+print("Intrest of the principle value is:",p*r*t/100)
+
+17)
+l=int(input("Enter the length of square:"))
+print("Area of the square is:", l*l)
+print("perimeter of the square is:", 4*l)
+
+18)
+l=int(input("Enter the length of square:"))
+b=int(input("Enter the bregth of square:"))
+print("Area of the rectangle is:", l*b)
+print("perimeter of the rectangle is:", 2*(l+b))
+
+19)
+r=int(input("Enter the radious of circle:"))
+print("Area of the circle is :", 22/7*r*r)
+
+20)
+l=int(input("Enter the length of triangle:"))
+h=int(input("Enter the height of triangle:"))
+print("Area of triangle is:", 1/2*l*h)
+
+21)
+GS=int(input("Enter gross salary:"))
+a=GS*0.1
+d=GS*0.03
+print("net salary is:",GS+a-d)
+
+22)
+GS=int(input("Enter gross sales:"))
+d=GS*0.1
+print("Net salary is:",GS-d)
+
+23)
+marks1=int(input("enter first marks:"))
+marks2=int(input("enter second marks:"))
+marks3=int(input("enter third marks:"))
+print("sum of the three subject is:", marks1+marks2+marks3)
+print("average of the three subject is:", (marks1+marks2+marks3)/3)
+
+24)
+a=int(input("Enter first value:"))
+b=int(input("Enter second value:"))
+print("original value:")
+print("a:", a)
+print("b:", b)
+temp=a
+a=b
+b=temp
+print("swapped value:")
+print("a:", a)
+print("b:", b)
+
+
+

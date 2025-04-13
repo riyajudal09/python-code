@@ -1,0 +1,70 @@
+
+1)
+dict1={"a":1,"b":2}
+dict2={"c":3,"d":4}
+dict3={"e":5,"f":6}
+
+dict4={**dict1, **dict2, **dict3}
+print(dict4)
+
+dict4={}
+
+2)
+dict={ }
+if len(dict)==0:
+    print("The dictionary is empty ")
+else:
+    print("The dictionary is empty ")
+
+3)
+
+from collections import defaultdict
+employees = [
+    {"dept_no": 101, "emp_roll_no": 1, "salary": 50000},
+    {"dept_no": 101, "emp_roll_no": 2, "salary": 70000},
+    {"dept_no": 102, "emp_roll_no": 3, "salary": 45000},
+    {"dept_no": 102, "emp_roll_no": 4, "salary": 60000},
+    {"dept_no": 103, "emp_roll_no": 5, "salary": 80000},
+    {"dept_no": 103, "emp_roll_no": 6, "salary": 55000}
+]
+dept_salaries = defaultdict(list)
+for emp in employees:
+    dept_salaries[emp["dept_no"]].append(emp["salary"])
+print(dept_salaries)
+for dept, salaries in dept_salaries.items():
+    print(f"Department {dept}: Min Salary = {min(salaries)}, Max Salary = {max(salaries)}")
+
+4)
+
+from collections import defaultdict
+text = input("Enter a string: ")
+char_frequency = defaultdict(int)
+for char in text:
+    char_frequency[char] += 1  
+print("Character Frequency Dictionary:")
+print(dict(char_frequency))
+
+5)
+
+grocery_prices = {
+    "apples": 3.5,
+    "banana": 3.0,
+    "milk": 2.5,
+    "mango": 5.5
+}
+
+grocery_quantities = {
+    "apple": 2,
+    "banana": 1,
+    "milk": 2,
+    "mango": 4
+}
+
+total_bill = []
+
+for item in grocery_prices:
+    if item in grocery_quantities:
+        sum_items = grocery_prices[item] * grocery_quantities[item]
+        total_bill.append(sum_items)
+
+print(f"totalbill: ${sum(total_bill):.2f}")

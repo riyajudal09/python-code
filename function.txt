@@ -1,0 +1,155 @@
+
+1)
+def count_lower_upper(string):
+    counts={"upper":0,"lower":0}
+    for i in string:
+        if i.isupper():
+            counts["upper"]+=1
+        elif i.islower():
+            counts["lower"]+=1
+    return counts
+string=input("Enter a string:")
+print(count_lower_upper(string))
+
+2)
+def compute(n):
+    x=n+n*n+n*n*n+n*n*n*n
+    return x
+i=int(input("Enter a number between 4-7 :"))
+print(compute(i))
+
+3)
+def sum_avg(marks):
+    total=sum(marks)
+    average=total/len(marks)
+    return total, average
+marks=[34,56,46,78]
+print(sum_avg(marks))
+
+4)
+def is_palindrome(str):
+    if (str[:]==str[::-1]):
+        print("palindrome")
+    else:
+        print("not palindrome")
+str=input("enter string:")
+is_palindrome(str)
+
+5)
+def convert(string):
+    set1=set(string)
+    lst1=sorted(list(set1))
+    print(lst1)
+    for ele in lst1:
+        if(ele==" "):
+            lst1.remove(" ")
+    print(lst1)
+str=input("Enetr a string:")
+convert(str)
+
+6)
+def count_alpha_digits(string):
+    countalpha=0
+    countnum=0
+    for ele in string:
+        if(ele.isalpha()==True):
+            countalpha+=1
+        elif(ele.isdigit()==True):
+            countnum+=1
+    dict={ "Alphabets" : countalpha,
+          "Digits" : countnum}
+    print(dict)
+str=input("Enter a string:")
+count_alpha_digits(str)
+
+7)
+
+def frequency(string,word):
+    print(string.count(word))
+str1=input("Enter a string:")
+n=input("Enter the letter Whosefrequency has to checked:")
+frequency(str1,n)
+
+8)
+def create_list(list1,list2):
+    list3=[]
+    for ele in list1:
+        if ele in list2:
+            list3.append(ele)
+    print(list3)
+lst1=[1,2,3,4,5,6]
+lst2=[4,5,6,7,8,9]
+create_list(lst1,lst2)
+
+9)
+list1=[1,2,3,4,5,6]
+list2=[6,5,4,3,2,1]
+
+result=list(map(lambda x,y:x+y,list1,list2))
+print(result)
+
+
+
+import random
+random_number=[random.randint(-15,15) for _ in range(10)]
+squ_number=[x**2 for x in random_number]
+print(random_number)
+print(squ_number)
+
+
+list=["madam","python","malayalam",12321]
+palin=[str(word) for word in list if str (word) == str(word)[::-1]]
+print(palin)
+
+
+faculty_members = ["Chintan bhatt", "asutosh kulkarni", "Ajay Devgan", "zeeljha", "vedshah"]
+
+filtered_names = list(filter(lambda x: len(x) >= 8, faculty_members))
+
+print("Filtered Names:", filtered_names)  
+
+10)
+import random
+random_number=[random.randint(-15,15) for _ in range(10)]
+squ_number=[x**2 for x in random_number]
+print(random_number)
+print(squ_number)
+
+
+list=["madam","python","malayalam",12321]
+palin=[str(word) for word in list if str (word) == str(word)[::-1]]
+print(palin)
+
+
+faculty_members = ["Chintan bhatt", "asutosh kulkarni", "Ajay Devgan", "zeeljha", "vedshah"]
+
+filtered_names = list(filter(lambda x: len(x) >= 8, faculty_members))
+
+print("Filtered Names:", filtered_names)  
+
+11)
+import random
+random_number=[random.randint(-15,15) for _ in range(10)]
+squ_number=[x**2 for x in random_number]
+print(random_number)
+print(squ_number)
+
+
+list=["madam","python","malayalam",12321]
+palin=[str(word) for word in list if str (word) == str(word)[::-1]]
+print(palin)
+
+
+faculty_members = ["Chintan bhatt", "asutosh kulkarni", "Ajay Devgan", "zeeljha", "vedshah"]
+
+filtered_names = list(filter(lambda x: len(x) >= 8, faculty_members))
+
+print("Filtered Names:", filtered_names)  
+
+12)
+faculty_members = ["Chintan bhatt", "asutosh kulkarni", "Ajay Devgan", "zeeljha", "vedshah"]
+
+filtered_names = list(filter(lambda x: len(x) >= 8, faculty_members))
+
+print("Filtered Names:", filtered_names)  
+

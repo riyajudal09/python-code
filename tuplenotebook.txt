@@ -1,0 +1,106 @@
+
+1)
+Name=[("niyu"),("jaydip",),("mansi"),("diya"),("hardeep",),("sanket",),("dipak",)]
+boy_count=0
+girls_count=0
+for name in Name :
+    if isinstance(name,tuple):
+        boy_count+=1
+    elif isinstance(name,str):
+        girls_count+=1
+print(f"number of boy:{boy_count}")
+print(f"number of girls:{girls_count}")
+
+2)
+students=[(129,"heli",17),(121,"jay",19),(168,"tiya",18),(188,"jyot",18)]
+Roll_nos=[]
+for student in students:
+    # print(student[0])
+    Roll_nos.append(student[0])
+print("ROLL:",Roll_nos)
+
+names=[]
+for student in students:
+    # print(student[1])
+    names.append(student[1])
+print("NAME:",names)
+
+Age =[ ]
+for student in students:
+    # print(student[2])
+    Age.append(student[2])
+print("AGE",Age)
+
+3)
+
+from datetime import date
+date1 = (10, 4, 2022)  
+date2 = (25, 4, 2024) 
+
+
+d1 = date(date1[2], date1[1], date1[0])  
+d2 = date(date2[2], date2[1], date2[0])  
+
+days_between = abs((d2 - d1).days) 
+print(f"Number of days between {date1} and {date2} is {days_between} days.")
+
+4)
+
+manu ={
+    "pizza":50,
+    "coffee":30,
+    "pasta":70,
+    "salad":80,
+    "Burger":40
+}
+print("Welcome to PYTHON Restaurant")
+print("pizza :50RS\ncoffee:30RS\npasta:70RS\nsalad:80RS\nBurger:40RS")
+
+order_total=0
+item_1=input("enter the name of item you want to order =")
+if item_1 in manu:
+    order_total+=manu[item_1]
+    print(f"your item{item_1}has been added to your order")
+else:
+    print(f"ordered item{item_1}is not avialable yet:")
+anorder_order=input("Do you want to add anorder item?(yes/no)")    
+if anorder_order=="yes":
+    item_2=input("enter the name of second item=")
+    if item_2 in manu:
+        order_total+=manu[item_2]
+        print(f"item{item_2}has been added to order ")
+    else:
+        print(f"order item{item_2}is not avaialble!")
+
+print(f"the total amount of item is {order_total}")
+
+5)
+
+tuple_list=[("apple",15),( ),("banana",6),( ), ( ),("cherry",12),()]
+list = []
+for T in tuple_list:
+    if T:
+        list.append(T)
+print("list after remove empty tuples:",list)
+
+6)
+
+My_tuple=(18,16,22,12,19)
+list =list(My_tuple)
+list[2]=32
+modified_tuple=tuple(list)
+print(modified_tuple)
+
+7)
+
+My_tuple=(18,16,22,12,19)
+list =list(My_tuple)
+list.remove(12)
+modified_tuple=tuple(list)
+print(modified_tuple)
+
+lst = [ ("x","y","z"), 40, 50 , 60]
+a = lst[0]
+print (a)
+
+output: ("x","y","z")

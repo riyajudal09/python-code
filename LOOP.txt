@@ -1,0 +1,161 @@
+1)
+str=input("Enter a string:")
+lst1=[]
+lst2=[]
+for char in str:
+    a=ord(char)
+    if 65<=a<=90:
+        a=a+32
+        lst1.append(chr(a))
+
+    else:
+        lst1.append(chr(a))
+string1=''.join(lst1)
+print( "lower case is :",string1)
+
+for char in str:
+    a=ord(char)
+    if 97<=a<=122:
+        a=a-32
+        lst2.append(chr(a))
+    else:
+        lst2.append(chr(a))
+string2=''.join(lst2)
+print( "upper case is :",string2)
+
+2)
+n=int(input("ENter a number:"))
+for i in range(1,11):
+    print(n,"x",i,"=",n*i)
+3)
+str=input("Enter a string:")
+count_alpha=0
+count_digit=0
+for ele in str:
+    if ele.isalpha():
+        count_alpha+=1
+    elif ele.isdigit():
+        count_digit+=1
+
+print("number of digits in the string are:",count_digit)
+print("number of alphabets in the string are:",count_alpha)
+
+4)
+n=int(input("Enter a number:"))
+#prime number:
+count=0
+for i in range(2,int(n/2)+1):
+    if n%i==0:
+        count+=1
+if count==0:
+    print(" Prime number.")
+else:
+    print("Not a prime number.")
+# perfect number:
+if n>=0:
+    print("Perfect number.")
+else:
+    print("Not a perfect number.")        
+num=str(n)
+lst=list(num)
+lst1=[]
+length=len(lst)
+for ele in lst:
+    lst1.append(pow(int(ele),length))
+sum=sum(lst1)
+if sum==n:
+    print("Is armstrong number.")
+else:
+    print("Not an armstrong number:")
+true=0
+lst2=lst1
+lst3=list(reversed(lst1))
+for i in lst2:
+  if lst2 in lst1:
+        true+=1
+if true==len(lst2):
+    print("Is not a palindrome.")
+else:
+    print("Is palindrome.")
+#automorphic number
+square=str(pow(n,2))
+lst4=list(square)
+m=len(lst4)
+if n==int(lst4[m-1]):
+    print("automorphic number")
+else:
+    print("not automorphic number")
+
+5)
+lst=[]
+for i in range(1,31):
+    for j in range(1,31):
+       r=int((i*i)+(j*j))
+       n=pow(r,0.5)
+       if n== int(pow(r,0.5)) and i<j:
+           lst.append([i,j,int(n)])
+        
+print(lst)
+
+6)
+for i in range (1,25):
+    if i<12:
+        print(i,"AM")
+    else:
+        print(i,"PM")
+    
+7)
+product=1
+n=int(input("Enter n:"))
+r=int(input("Enter r:"))
+i=1
+while i<=r:
+    product=product*(n-i+1)
+    i+=1
+print(product)
+#ncr=n!/r!(n-r)!  
+sum=1
+for i in range(1,r+1):
+    sum=sum*(n-r+i)/i
+print("nCr =",sum)
+    
+8)
+num=int(input("Enter a number:"))
+sum=1
+for i in range(1,num+1):
+    sum=sum*i
+print("Factorial of given number is:",sum)
+
+9)
+n=int(input("Enter number:"))
+print("Reverse  n natural numbers are: ")
+for i in range(n,0,-1):
+    print(i)
+10)
+n=int(input("Enter number:"))
+a=0
+b=1
+temp=b
+i=1
+while i<=n:
+    print(a,end=" ")
+    a=b
+    b=temp
+    temp=a+b
+    i+=1
+
+11)
+n=int(input("Enter value of angle in degrees:"))
+x=n*3.14/180
+print(x)
+sinx=x
+fact=1
+for i in range(3,26,2):
+    fact=fact*i*(i-1)
+    i+=1
+    for i in range(1,10):
+        a=pow(-1,i)
+        b=pow(x,(2*i+1))/fact
+        sinx=sinx+(a*b)
+        i+=1
+print(sinx)
